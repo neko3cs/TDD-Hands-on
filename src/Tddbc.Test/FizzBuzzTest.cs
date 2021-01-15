@@ -11,10 +11,8 @@ namespace Tddbc.Test
             FizzBuzz fizzBuzz = new FizzBuzz();
 
             // é¿çs
-            string actual = fizzBuzz.Convert(1);
-
             // åüèÿ
-            Assert.Equal("1", actual);
+            Assert.Equal("1", fizzBuzz.Convert(1));
         }
     }
 }
