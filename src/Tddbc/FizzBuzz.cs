@@ -4,6 +4,10 @@
     {
         public string Convert(int num)
         {
+            if (num % 15 is 0)
+            {
+                return "FizzBuzz";
+            }
             if (num % 3 is 0)
             {
                 return "Fizz";

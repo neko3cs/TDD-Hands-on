@@ -31,6 +31,14 @@ namespace Tddbc.Test
             }
 
             [Theory]
+            [InlineData(15)]
+            [InlineData(30)]
+            public void _15‚Ì”{”‚Ì‚Í”‚Ì‘ã‚í‚è‚ÉFizzBuzz‚Æ•ÏŠ·‚·‚é(int num)
+            {
+                _fizzBuzz.Convert(num).Should().Be("FizzBuzz");
+            }
+
+            [Theory]
             [InlineData(1, "1")]
             [InlineData(2, "2")]
             public void ‚»‚Ì‘¼‚Ì”‚Ìê‡‚Í‚»‚Ì‚Ü‚Ü•¶š—ñ‚É•ÏŠ·‚·‚é(int num, string expected)
