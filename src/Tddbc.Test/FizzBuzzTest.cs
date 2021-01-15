@@ -1,3 +1,4 @@
+using FluentAssertions;
 using Xunit;
 
 namespace Tddbc.Test
@@ -14,7 +15,7 @@ namespace Tddbc.Test
 
             // é¿çs
             // åüèÿ
-            Assert.Equal(expected, fizzBuzz.Convert(num));
+            fizzBuzz.Convert(num).Should().Be(expected);
         }
     }
 }
