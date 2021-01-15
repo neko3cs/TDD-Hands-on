@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Tddbc
+﻿namespace Tddbc
 {
     public class FizzBuzz
     {
@@ -9,6 +7,10 @@ namespace Tddbc
             if (num % 3 is 0)
             {
                 return "Fizz";
+            }
+            if (num % 5 is 0)
+            {
+                return "Buzz";
             }
             return num.ToString();
         }

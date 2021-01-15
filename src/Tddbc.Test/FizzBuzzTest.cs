@@ -25,5 +25,11 @@ namespace Tddbc.Test
         {
             _fizzBuzz.Convert(3).Should().Be("Fizz");
         }
+
+        [Fact]
+        public void _5‚ð“n‚·‚Æ•¶Žš—ñBuzz‚ð•Ô‚·()
+        {
+            _fizzBuzz.Convert(5).Should().Be("Buzz");
+        }
     }
 }
