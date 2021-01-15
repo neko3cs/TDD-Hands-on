@@ -20,16 +20,18 @@ namespace Tddbc.Test
             _fizzBuzz.Convert(num).Should().Be(expected);
         }
 
-        [Fact]
-        public void _3‚ğ“n‚·‚Æ•¶š—ñFizz‚ğ•Ô‚·()
+        [Theory]
+        [InlineData(3)]
+        public void _3‚Ì”{”‚Ì‚Í”‚Ì‘ã‚í‚è‚ÉFizz‚Æ•ÏŠ·‚·‚é(int num)
         {
-            _fizzBuzz.Convert(3).Should().Be("Fizz");
+            _fizzBuzz.Convert(num).Should().Be("Fizz");
         }
 
-        [Fact]
-        public void _5‚ğ“n‚·‚Æ•¶š—ñBuzz‚ğ•Ô‚·()
+        [Theory]
+        [InlineData(5)]
+        public void _5‚Ì”{”‚Ì‚Í”‚Ì‘ã‚í‚è‚ÉBuzz‚Æ•ÏŠ·‚·‚é(int num)
         {
-            _fizzBuzz.Convert(5).Should().Be("Buzz");
+            _fizzBuzz.Convert(num).Should().Be("Buzz");
         }
     }
 }
