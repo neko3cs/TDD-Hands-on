@@ -6,6 +6,10 @@ namespace Tddbc
     {
         public string Convert(int num)
         {
+            if (num is 3)
+            {
+                return "Fizz";
+            }
             return num.ToString();
         }
     }
